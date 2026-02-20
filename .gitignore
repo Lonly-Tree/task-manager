@@ -4,8 +4,11 @@ venv/
 # Ignore compiled files
 *.pyc
 
-# Ignore environment variables
-.env
+# Ignore pycache folder
+__pycache__/
 
 # Ignore logs
 *.log
+
+# Ignore databases
+*.db
