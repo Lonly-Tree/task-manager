@@ -1,4 +1,4 @@
-from .models import User, Task, TaskNote
+from .models import User, Task, TaskNote, EncryptedField
 from .enums import Priority, TaskStatus
 
 __all__ = [
@@ -7,4 +7,5 @@ __all__ = [
     "TaskNote",
     "Priority",
     "TaskStatus",
+    "EncryptedField",
 ]

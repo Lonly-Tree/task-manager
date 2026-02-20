@@ -3,6 +3,8 @@ from datetime import datetime
 from sqlalchemy.orm import Mapped, mapped_column,relationship
 from repositories.database import Base
 from enums import TaskStatus, Priority
+from dataclasses import dataclass
+
 
 class User(Base):
     __tablename__ = "users"
@@ -56,3 +58,11 @@ class TaskNote(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow) # type: ignore
 
     task: Mapped["Task"] = relationship(back_populates="notes")
+
+
+@dataclass
+class EncryptedField:
+    blob: bytes
+
+    def is_empty(self) -> bool:
+        return not self.blob
