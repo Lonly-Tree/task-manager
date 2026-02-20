@@ -80,5 +80,3 @@ class OutputFormatter:
         if isinstance(value, datetime):
             return value.strftime("%Y-%m-%d %H:%M")
         return value or "-"
-
-

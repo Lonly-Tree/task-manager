@@ -1,6 +1,4 @@
-# cli/note_handler.py
 from __future__ import annotations
-
 from .formatter import OutputFormatter
 
 
@@ -43,3 +41,4 @@ class NoteCommandHandler:
         except Exception as e:
             print(OutputFormatter.error(str(e)))
             return 1
+

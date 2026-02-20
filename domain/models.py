@@ -2,7 +2,7 @@ from sqlalchemy import ForeignKey, Integer, LargeBinary, String, DateTime
 from datetime import datetime
 from sqlalchemy.orm import Mapped, mapped_column,relationship
 from repositories.database import Base
-from enums import TaskStatus, Priority
+from domain.enums import TaskStatus, Priority
 from dataclasses import dataclass
 
 

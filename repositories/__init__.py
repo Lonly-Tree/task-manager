@@ -1,4 +1,4 @@
-from .database import engine, SessionLocal
+from .database import engine, SessionLocal, Base
 from .interfaces import IUserRepository, ITaskRepository, INoteRepository
 
 __all__ = [
@@ -7,4 +7,5 @@ __all__ = [
     "IUserRepository",
     "ITaskRepository",
     "INoteRepository",
+    "Base",
 ]
