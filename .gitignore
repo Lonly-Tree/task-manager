@@ -12,3 +12,8 @@ __pycache__/
 
 # Ignore databases
 *.db
+
+# Ignore environment variables
+.env
+
+API_KEY.txt
