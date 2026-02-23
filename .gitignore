@@ -16,4 +16,4 @@ __pycache__/
 # Ignore environment variables
 .env
 
-API_KEY.txt
+API_KEY.KEY

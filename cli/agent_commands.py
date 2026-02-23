@@ -328,6 +328,8 @@ The function must ensure the task exists and belongs to the current user before 
 
         tid = _safe_int(task_id)
         if tid is None:
+            print(tid)
+            print(type(tid))
             return {"ok": False, "error": "task_id must be an integer."}
 
         try:
@@ -346,6 +348,9 @@ The function must ensure the task exists and belongs to the current user before 
 
         tid = _safe_int(task_id)
         if tid is None:
+            print(tid)
+            print(type(tid))
+
             return {"ok": False, "error": "task_id must be an integer."}
 
         if not (content or "").strip():
